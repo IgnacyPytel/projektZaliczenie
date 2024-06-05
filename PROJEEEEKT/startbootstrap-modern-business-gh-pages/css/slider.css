@@ -1,0 +1,110 @@
+
+.slder-cad{
+   max-width: 600px;
+   width:100%;
+   border-radius: 15px;
+   position: relative;
+}
+.slder-cad i{
+    background-color: #fff;
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slder-cad i:first-child{
+    left: -23px;
+    display: none;
+}
+.slder-cad i:last-child{
+    right: -23px;
+}
+ion-icon{
+   
+    height: 46px;
+    width: 46px;
+    transform: translateY(-5%);
+}
+.slder-cad .cad-img{
+    white-space: nowrap;
+    font-size: 0px;
+    overflow: hidden; 
+    scroll-behavior: smooth; 
+}
+.cad-img.dragging{
+    cursor: grab;
+    scroll-behavior: auto; 
+}
+.cad-img.dragging img{
+    pointer-events: none;
+}
+.cad-img img{
+    height: 350px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100%);
+    border-radius: 15px;
+}
+.cad-img img:first-child{
+    margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+    .cad-img img{
+         width: calc(100%);
+    }
+}
+@media screen and (max-width: 550px) {
+    .cad-img img{
+         width: 100%;
+    }
+}
+
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; /* Zaokrąglone krawędzie */
+}
+.gallery-header {
+    margin-top: 40px; /* Zwiększony margines górny aby napis ładniej wyglądał */
+}
+
+/* Style dla sekcji drugiego slidera */
+.slider-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.slider-section .slider-content {
+    width: 50%;
+    padding: 20px;
+}
+.slider-section .slider-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-section .slider-image img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.slider-controls button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}

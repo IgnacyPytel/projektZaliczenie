@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+h1 {
+    font-weight: bold;
+}
+.big-image, .small-image {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black; 
+}
+.big-image {
+    height: 425px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.small-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+}
+.image-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.position-absolute {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #fff; /* Dodajemy białą czcionkę dla czytelności */
+    padding: 5px;
+    border: 1px solid black; /* Dodajemy czarną obramówkę */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dajemy tło przezroczyste */
+}
+/* Style dla nagłówków Ofert */
+.h2MiejscePodrozy h2 {
+    font-size: 3em; /* Rozmiar czcionki */
+    font-family: 'Arial', sans-serif; /* Wybrany font */
+    color: #000000; /* Kolor tekstu */
+    position: relative; /* Pozycjonowanie względem rodzica */
+}
+
+/* Efekt podkreślenia */
+.h2MiejscePodrozy h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0); /* Początkowo podkreślenie jest niewidoczne */
+    transition: transform 0.3s ease-in-out; /* Efekt animacji */
+}
+
+/* Animacja podkreślenia po najechaniu myszą */
+.h2MiejscePodrozy h2:hover::after {
+    transform: scaleX(1); /* Pokazanie podkreślenia */
+}
