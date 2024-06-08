@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Definicja wersji dokumentu HTML -->
+<html lang="pl">
+<!-- Określa język dokumentu jako polski -->
+<head>
+    <meta charset="utf-8" />
+    <!-- Określa kodowanie znaków na UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Zapewnia responsywność strony na urządzeniach mobilnych -->
+    <meta name="description" content=" " />
+    <!-- Opis strony dla wyszukiwarki -->
+    <meta name="author" content=" " />
+    <!-- Autor strony -->
+    <title>Polskie Podróże</title>
+    <!-- Tytuł strony -->
+
+    <!-- Ikonka strony -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Ikony Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Główny plik CSS (zawiera Bootstrap) -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column">
+    <!-- Ustawienie klasy dla pełnej wysokości ciała strony -->
+    <main class="flex-shrink-0">
+        <!-- Główna zawartość strony, która może się zmniejszać -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Pasek nawigacyjny -->
+            <div class="container px-5">
+                <!-- Kontener z zawartością -->
+                <a class="navbar-brand" href="oferty.html">Zainspiruj się</a>
+                <!-- Link do strony z ofertami -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Przycisk do rozwijania menu na urządzeniach mobilnych -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Menu nawigacyjne -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Lista elementów menu -->
+                        <li class="nav-item"><a class="nav-link" href="index.html">Nasza oferta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="opinie.html">Opinie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sekcja z formularzem -->
+        <section class="py-5">
+            <div class="container">
+                <!-- Kontener na formularz kontaktowy -->
+                <div class="row">
+                    <!-- Wiersz z elementami formularza -->
+                    <div class="col-lg-8 mx-auto">
+                        <!-- Kolumna z formularzem -->
+                        <form class="comment-form" id="contactForm" data-post-id="1">
+                            <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                                <!-- Formularz kontaktowy -->
+                                <div class="text-center mb-5">
+                                    <!-- Nagłówek formularza -->
+                                    <h1 class="fw-bolder">Dodaj własną opinię</h1>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- Pole na imię -->
+                                    <label for="name-1" class="form-label">Imię</label>
+                                    <input type="text" class="form-control" id="name-1" name="name-1" required>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- Pole na email -->
+                                    <label for="email-1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email-1" name="email-1" required>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- Pole na telefon -->
+                                    <label for="phone-1" class="form-label">Telefon</label>
+                                    <input type="tel" class="form-control" id="phone-1" name="phone-1" pattern="[0-9]{9}" required>
+                                    <!-- Wzór numeru telefonu (9 cyfr) -->
+                                </div>
+                                <div class="mb-3">
+                                    <!-- Wybór płci -->
+                                    <label class="form-label">Wybierz płeć:</label>
+                                    <div class="form-check">
+                                        <!-- Opcja: Mężczyzna -->
+                                        <input class="form-check-input" type="radio" name="gender" id="male-1" value="mężczyzna" checked>
+                                        <label class="form-check-label" for="male-1">Mężczyzna</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <!-- Opcja: Kobieta -->
+                                        <input class="form-check-input" type="radio" name="gender" id="female-1" value="kobieta">
+                                        <label class="form-check-label" for="female-1">Kobieta</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <!-- Opcja: Inne -->
+                                        <input class="form-check-input" type="radio" name="gender" id="other-1" value="inne">
+                                        <label class="form-check-label" for="other-1">Inne</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- Pole na treść komentarza -->
+                                    <label for="commentText-1" class="form-label">Treść komentarza</label>
+                                    <textarea class="form-control" id="commentText-1" name="commentText-1" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Dodaj komentarz</button>
+                                <!-- Przycisk do wysłania formularza -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja z opiniami -->
+        <section class="py-5">
+            <h2>Opinie</h2>
+            <div class="container">
+                <!-- Kontener na opinie -->
+                <div class="row">
+                    <!-- Wiersz z opiniami -->
+                    <div class="col-lg-8 mx-auto">
+                        <!-- Kolumna z opiniami -->
+                        <div id="commentsList-1"></div>
+                        <!-- Lista komentarzy -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Stopka -->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <!-- Kontener z zawartością stopki -->
+            <div class="row align-items-center justify-content-center flex-column flex-sm-row">
+                <!-- Wiersz z elementami stopki -->
+                <div class="col-auto text-center">
+                    <!-- Kolumna z tekstem -->
+                    <div class="small m-0 text-white">Copyright &copy;IP</div>
+                    <!-- Tekst stopki -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Główny plik JS dla motywu -->
+    <script src="js/scripts.js"></script>
+    <!-- Skrypt do walidacji formularza oraz obsługi komentarzy zapisanych w localStorage -->
+    <script src="js/komentarze.js"></script>
+</body>
+</html>

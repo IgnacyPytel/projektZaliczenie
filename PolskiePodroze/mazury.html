@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- definicja wersji dokumentu html -->
+<html lang="pl">
+    <!-- okresla jezyk jako polski(opcjonalnie mozna wpisac en aby zmienic na angielski) -->
+<head>
+    <meta charset="utf-8" />
+    <!-- okresla kodowanie znakow na UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- zapewnia ze strona jest responsywna na urzadzeniach mobilnych -->
+    <meta name="description" content="" />
+    <!-- opis strony dla wyszukiwarki -->
+    <meta name="author" content="" />
+    <!-- autor strony -->
+    <title>Polskie Podróże</title>
+    <!-- tytuł strony -->
+
+    <!-- ikonka-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- slider.css dla mojego i tego z internetu slidera -->
+    <link rel="stylesheet" href="css/slider.css" />
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.css" /> 
+</head>
+<body class="d-flex flex-column h-100">
+        <!-- ustawienie klasy dla pelnej wysokosci ciala strony -->
+    <main class="flex-shrink-0">
+    <!-- glowna zawartosc strony ktora moze sie zmniejszac -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Navbar -->
+            <div class="container px-5">
+                <!-- kontener z zawartością -->
+                <a class="navbar-brand" href="oferty.html">Zainspiruj się</a>
+                <!-- link do strony z ofertami -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <!-- przycisk do rozwijania menu na urzadzeniach mobilnych -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- menu -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- lista elementów menu -->
+                        <li class="nav-item"><a class="nav-link" href="index.html">Nasza oferta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="opinie.html">Opinie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Sekcja galerii i slidera -->
+        <section class="py-5" id="features">
+            <!-- Sekcja z opisem -->
+            <div class="container px-5">
+                <!-- kontener z zawartością -->
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <!-- wiersz z elementami -->
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <!-- kolumna z elementami -->
+                        <div class="my-5 text-center text-xl-start">
+                            <!-- odstęp od góry, tekst wyśrodkowany na środku i na lewo dla większych ekranów -->
+                            <h1 class="display-5 fw-bolder text-black mb-2">Odkryj piękno Mazur!</h1>
+                            <!-- tekst nagłówka -->
+                            <p class="lead fw-normal text-black-50 mb-4">Marzy Ci się wyjazd na Mazury? Ten region Polski obfituje w najróżniejsze atrakcje na każdą porę roku! Sprawdź, co warto zwiedzić na Mazurach, jakie zabytki i atrakcje na Ciebie czekają.</p>
+                            <!-- opis -->
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <!-- odstęp między elementami -->
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="index.html">Sprawdź Oferty</a>
+                                <!-- przycisk do strony z ofertami -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slder-cad">
+                        <!-- Sekcja z galerią + wykorzystanie jQuery lightboxa-->
+                        <i id="left"><ion-icon name="caret-back-outline"></ion-icon></i>
+                        <!-- ikona do przewijania w lewo -->
+                        <div class="cad-img">
+                            <!-- kontener z obrazkami -->     
+                            <a href="images/mazury/szelment.jpeg" data-lightbox="slider">
+                                <img src="images/mazury/szelment.jpeg" alt="Obraz 1" draggable="false">
+                            </a>
+                            <a href="images/mazury/mazury2.jpg" data-lightbox="slider">
+                                <img src="images/mazury/mazury2.jpg" alt="Obraz 2" draggable="false">
+                            </a>
+                            <a href="images/mazury/mazury3.jpg" data-lightbox="slider">
+                                <img src="images/mazury/mazury3.jpg" alt="Obraz 3" draggable="false">
+                            </a>
+                            <a href="images/mazury/mazury4.jpg" data-lightbox="slider">
+                                <img src="images/mazury/mazury4.jpg" alt="Obraz 4" draggable="false">
+                            </a>
+                        </div> 
+                        <!-- ikona do przewijania w prawo -->
+                        <i id="right"><ion-icon name="caret-forward-outline"></ion-icon></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Sekcja z galerią zdjęć -->
+            <h2 class="text-center fw-bolder text-black mb-2 gallery-header">Więcej Zdjęć</h2>
+            <!-- nagłówek -->
+            <div class="container px-5">
+                <!-- kontener z zawartością -->
+                <div class="row gx-5 gy-3">
+                    <!-- wiersz z elementami -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <!-- kolumna z elementami , galeria z wykorzystaniem jQuery ligtboxa-->
+                        <a href="images/mazury/mazury5.jpg" data-lightbox="gallery">
+                            <img src="images/mazury/mazury5.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 1">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/mazury/mazury6.jpg" data-lightbox="gallery">
+                            <img src="images/mazury/mazury6.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 2">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/mazury/mazury7.jpg" data-lightbox="gallery">
+                            <img src="images/mazury/mazury7.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 3">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/mazury/mazury8.jpg" data-lightbox="gallery">
+                            <img src="images/mazury/mazury8.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sekcja z moim sliderem  -->
+        <section class="py-5" id="slider-section">
+            <div class="container px-5">
+                <!-- kontener z zawartością -->
+                <div class="slider-section">
+                    <!-- sekcja z sliderem -->
+                    <div class="slider-image">
+                        <!-- kontener z obrazkiem -->
+                        <img src="images/mazury/MikolajkiMazury.jpg" class="gallery-img" alt="Obraz 1">
+                    </div>
+                    <div class="slider-content">
+                        <!-- kontener z tekstem -->
+                        <h2>Piękno Mazur</h2>
+                        <!-- nagłówek -->
+                        <p>Mazury, kraina tysiąca jezior, oferuje nie tylko piękne widoki, ale również wiele atrakcji dla miłośników przyrody i historii. To idealne miejsce na odpoczynek i aktywny wypoczynek.</p>
+                        <!-- opis -->
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <!-- przyciski do przewijania -->
+                    <button id="slider-prev"><ion-icon name="caret-back-outline"></ion-icon></button>
+                    <button id="slider-next"><ion-icon name="caret-forward-outline"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sekcja z mapa-->
+        <section id="mapa">
+            <div class="container px-5">
+                <!-- kontener z zawartością -->
+                <div class="section-header">
+                    <!-- nagłówek -->
+                    <h1 class="display-5 fw-bolder text-black mb-2">Mapa - Mazury</h1>
+                    <a href="index.html">Sprawdź oferty wakacji</a>
+                    <!-- link do strony z ofertami -->
+                </div>
+                <div id="map"></div>
+                <div class="col-lg-12">
+                    <!-- kolumna z elementami -->
+                    <div class="card mb-4">
+                        <!-- karta z mapą -->
+                        <div class="card-body">
+                            <!-- zawartość karty (MAPA!!!!) -->
+                            <iframe class="iframe-style1"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97014.15591843443!2d21.46085609903902!3d53.776889155110836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c6036889f0f5d%3A0xf8ba94bba5a2d69e!2sMazury!5e0!3m2!1spl!2spl!4v1715868798234!5m2!1spl!2spl"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <!-- kontener z zawartością -->
+            <div class="row align-items-center justify-content-center flex-column flex-sm-row"> 
+                <!-- wiersz z elementami stopki -->
+                <div class="col-auto text-center"> 
+                    <!-- kolumna z tekstem -->
+                    <div class="small m-0 text-white">Copyright &copy;IP</div>
+                    <!-- tekst stopki -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Lightbox jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!-- Slider!! -->
+     <!-- Atrybut 'type=module' wskazuje, że skrypty są modułami ES6. Moduły ES6 są mechanizmem pozwalającym na importowanie i eksportowanie kodu między plikami JS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Atrybut 'nomodule' wskazuje, że skrypty są w wersji starszej niż ES6. W przypadku braku wsparcia dla modułów ES6, przeglądarka wykona skrypt z atrybutem 'nomodule' -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- MOJ SLIDER funckje sa w slider.js (to ponizej to inicjalizacja) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initSlider(sliderImagesMazury);
+        });
+    </script>
+</body>
+</html>

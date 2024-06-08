@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- definicja wersji dokumentu html -->
+<html lang="pl">
+<!-- okresla jezyk jako polski(opcjonalnie mozna wpisac en aby zmienic na angielski) -->
+<head>
+    <meta charset="utf-8" />
+    <!-- kodowanie znakow jako utf-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- zapewnia ze strona jest responsywna na urzadzeniach mobilnych -->
+    <meta name="description" content="" />
+    <!-- opis strony dla wyszukiwarki -->
+    <meta name="author" content="" />
+    <!-- informacje o autorze -->
+    
+    <!-- tytul strony --> 
+    <title>Polskie Podróże</title>
+    <!-- ikonka -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- import styli -->
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- slidery -->
+    <link rel="stylesheet" href="css/slider.css" />
+    <!-- Lightbox jQuery -->
+    <link rel="stylesheet" href="css/lightbox.css" /> 
+</head>
+<body class="d-flex flex-column h-100">
+    <!-- ustawienie klasy dla pelnej wysokosci ciala strony -->
+    <main class="flex-shrink-0">
+        <!-- glowna zawartosc strony ktora moze sie zmniejszac -->
+
+        <!-- Navigation (czarny)-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <!-- link w navbarze ktory prowadzi do "galerii" tych miejsc -->
+                <a class="navbar-brand" href="oferty.html">Zainspiruj się</a>
+                <!-- przycisk do rozwijania menu na urzadzeniach mobilnych -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- lista linkow w navbarze -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <!-- linki w navbarze ktore prowadza do odpowiednich stron -->
+                        <li class="nav-item"><a class="nav-link" href="index.html">Nasza oferta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="opinie.html">Opinie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Sekcja z sliderem(pierwszym) i galeria -->
+        <section class="py-5" id="features">
+            <!-- kontener z zawartoscia -->
+            <div class="container px-5">
+                <!-- wiersz z zawartoscia -->
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <!-- lewa strona slidera -->
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <!-- tekst w srodku slidera -->
+                        <div class="my-5 text-center text-xl-start">
+                                <!-- wydaje mi sie ze tekstu nie powienienem komentowac -->
+                                <!-- ale, tak to ten tekst -->
+                            <h1 class="display-5 fw-bolder text-black mb-2">Odkryj piękno Morza Bałtyckiego!</h1>
+                            <!-- tekst pod naglowkiem -->
+                            <p class="lead fw-normal text-black-50 mb-4">Morze Bałtyckie to niezwykłe miejsce, gdzie spotykają się piękne plaże, malownicze klify i bogata historia. Poznaj jego niepowtarzalny urok i zanurz się w atmosferę wakacyjnego relaksu.</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <!-- Button sprawdz oferty -->
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="index.html">Sprawdź Oferty</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slder-cad">
+                            <!-- slider (ten pierwszy, darmowy z internetu) -->
+                            <!-- ikonka slideru -->
+                        <i id="left"><ion-icon name="caret-back-outline"></ion-icon></i>
+                        <div class="cad-img">
+                            <!-- zdjecia w sliderze -->     
+                            <a href="images/morze/baltyk1.jpg" data-lightbox="slider">
+                                <img src="images/morze/baltyk1.jpg" alt="Obraz 1" draggable="false">
+                            </a>
+                            <a href="images/morze/baltyk2.jpg" data-lightbox="slider">
+                                <img src="images/morze/baltyk2.jpg" alt="Obraz 2" draggable="false">
+                            </a>
+                            <a href="images/morze/baltyk3.jpg" data-lightbox="slider">
+                                <img src="images/morze/baltyk3.jpg" alt="Obraz 3" draggable="false">
+                            </a>
+                            <a href="images/morze/baltyk4.jpg" data-lightbox="slider">
+                                <img src="images/morze/baltyk4.jpg" alt="Obraz 4" draggable="false">
+                            </a>
+                        </div> 
+                        <i id="right"><ion-icon name="caret-forward-outline"></ion-icon></i>
+                        <!-- prawa strona ikona slidera -->
+                    </div>
+                </div>
+            </div>
+            <!-- galeria zdjec -->
+            <h2 class="text-center fw-bolder text-black mb-2 gallery-header">Więcej Zdjęć</h2>
+            <!-- kontener z galeria -->
+            <div class="container px-5">
+                <!-- wiersz z galeria -->
+                <div class="row gx-5 gy-3">
+                    <!-- 4 zdjecia w galerii -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                            <!-- mala galeria 4 na 1 wiersz zdjec z wykorzystaniem lightboxa -->
+                        <a href="images/morze/baltyk5.jpg" data-lightbox="gallery">
+                            <img src="images/morze/baltyk5.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 1">
+                        </a>
+                    </div>
+                    <!-- kolejne zdjecia -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/morze/baltyk6.jpg" data-lightbox="gallery">
+                            <img src="images/morze/baltyk6.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 2">
+                        </a>
+                    </div>
+                    <!-- kolejne zdjecia -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/morze/baltyk7.jpg" data-lightbox="gallery">
+                            <img src="images/morze/baltyk7.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 3">
+                        </a>
+                    </div>
+                    <!-- kolejne zdjecia -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="images/morze/baltyk8.jpg" data-lightbox="gallery">
+                            <img src="images/morze/baltyk8.jpg" class="img-fluid img-thumbnail gallery-img" alt="Obraz 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sekcja z kolejym sliderem (moj!!!) -->
+        <section class="py-5" id="slider-section">
+            <!-- kontener z zawartoscia -->
+            <div class="container px-5">
+                <!-- wiersz z zawartoscia -->
+                <div class="slider-section">
+                    <!-- zdjecie w siderze -->
+                    <div class="slider-image">
+                        <img src="images/morze/morzeSopot.png" class="gallery-img" alt="Obraz 1">
+                    </div>
+                    <!-- tekst w sliderze -->
+                    <div class="slider-content">
+                        <h2>Piękno Morza Bałtyckiego</h2>
+                        <p>Mazury, kraina tysiąca jezior, oferuje nie tylko piękne widoki, ale również wiele atrakcji dla miłośników przyrody i historii. To idealne miejsce na odpoczynek i aktywny wypoczynek.</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                        <!-- jak nazwa klasy i id ponizszych mowi, to ikonki slidera -->
+                    <button id="slider-prev"><ion-icon name="caret-back-outline"></ion-icon></button>
+                    <button id="slider-next"><ion-icon name="caret-forward-outline"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+        <!-- Sekcja z mapa i tekstem oczywiscie -->
+        <section id="mapa">
+            <div class="container px-5">
+                <!-- wiersz z zawartoscia -->
+                <div class="section-header">
+                    <!-- tekst wysrodkowany nie wygladal estetycznie wiec zrezygnowalem -->
+                    <h1 class="display-5 fw-bolder text-black mb-2">Mapa - Morze Bałtyckie</h1>
+                    <!-- tekst ktory przekierowuje do ofert, inspiracja Itaka.com -->
+                    <a href="index.html">Sprawdź oferty wakacji</a>
+                </div>
+                <!-- mapa -->
+                <div id="map"></div>
+                <!-- wiersz z mapa -->
+                <div class="col-lg-12">
+                    <!-- karta z mapa -->
+                    <div class="card mb-4">
+                        <!-- naglowek karty -->
+                        <div class="card-body">
+                            <iframe class="iframe-style1"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d297081.8809549018!2d18.41990341390456!3d54.428477406030176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2zR2RhxYRzaw!5e0!3m2!1sen!2spl!4v1717698685815!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <!-- mapa od googla z odpowiednia lokalizacja, wykorzystanie ich api jest niestety platne -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark py-4 mt-auto">
+        <!-- kontener z zawartoscia -->
+        <div class="container px-5">
+            <!-- wiersz z zawartoscia -->
+            <div class="row align-items-center justify-content-center flex-column flex-sm-row"> 
+                <div class="col-auto text-center"> 
+                    <!-- tekst w stopce -->
+                    <div class="small m-0 text-white">Copyright &copy;IP</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- import js -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!-- Slider!! -->
+    <!-- Atrybut 'type=module' wskazuje, że skrypty są modułami ES6. Moduły ES6 są mechanizmem pozwalającym na importowanie i eksportowanie kodu między plikami JS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Atrybut 'nomodule' wskazuje, że skrypty są skryptami JS, które nie są modułami ES6. -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- MOJ SLIDER funckje sa w slider.js (to ponizej to inicjalizacja) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initSlider(sliderImagesBaltyk);
+        });
+    </script>
+</body>
+</html>

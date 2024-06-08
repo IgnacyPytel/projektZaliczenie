@@ -1,0 +1,180 @@
+/* Styl dla całego slidera */
+.slder-cad {
+    max-width: 600px; /* Maksymalna szerokość slidera */
+    width: 100%; /* Szerokość 100% */
+    border-radius: 15px; /* Zaokrąglenie krawędzi */
+    position: relative; /* Pozycja relatywna */
+}
+
+/* Styl dla ikon w sliderze */
+.slder-cad i {
+    background-color: #fff; /* Tło ikon */
+    top: 50%; /* Odległość od góry równa 50% */
+    height: 46px; /* Wysokość ikon */
+    width: 46px; /* Szerokość ikon */
+    position: absolute; /* Pozycja absolutna */
+    font-size: 1.4rem; /* Rozmiar czcionki */
+    cursor: pointer; /* Kursor wskaźnika */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    line-height: 46px; /* Wysokość linii */
+    border-radius: 50%; /* Zaokrąglenie krawędzi */
+    transform: translateY(-50%); /* Przesunięcie pionowe o -50% */
+}
+
+/* Styl dla pierwszej ikony w sliderze */
+.slder-cad i:first-child {
+    left: -23px; /* Odległość od lewej krawędzi */
+    display: none; /* Ukrycie pierwszej ikony */
+}
+
+/* Styl dla ostatniej ikony w sliderze */
+.slder-cad i:last-child {
+    right: -23px; /* Odległość od prawej krawędzi */
+}
+
+/* Styl dla ikon ion */
+ion-icon {
+    height: 46px; /* Wysokość ikon */
+    width: 46px; /* Szerokość ikon */
+    transform: translateY(-5%); /* Przesunięcie pionowe o -5% */
+}
+
+/* Styl dla obrazów w sliderze */
+.cad-img {
+    white-space: nowrap; /* Brak zawijania tekstu */
+    font-size: 0px; /* Rozmiar czcionki 0px */
+    overflow: hidden; /* Ukrycie treści, która nie mieści się */
+    scroll-behavior: smooth; /* Płynne przewijanie */
+}
+
+/* Styl dla przeciągania obrazów w sliderze */
+.cad-img.dragging {
+    cursor: grab; /* Zmiana kursora na grab */
+    scroll-behavior: auto; /* Automatyczne przewijanie */
+}
+
+/* Styl dla przeciąganych obrazów w sliderze */
+.cad-img.dragging img {
+    pointer-events: none; /* Wyłączenie zdarzeń na obrazach */
+}
+
+/* Styl dla obrazów wewnątrz slidera */
+.cad-img img {
+    height: 350px; /* Wysokość obrazów */
+    object-fit: cover; /* Dopasowanie obrazu */
+    margin-left: 14px; /* Margines od lewej strony */
+    width: calc(100%); /* Szerokość 100% */
+    border-radius: 15px; /* Zaokrąglenie krawędzi */
+}
+
+/* Styl dla pierwszego obrazu wewnątrz slidera */
+.cad-img img:first-child {
+    margin-left: 0px; /* Brak marginesu od lewej strony */
+}
+
+/* Media queries dla szerokości ekranu do 900px tablet */
+@media screen and (max-width: 900px) {
+    .cad-img img {
+         width: calc(100%); /* Szerokość 100% */
+    }
+}
+
+/* Media queries dla szerokości ekranu do 550px telefon */
+@media screen and (max-width: 550px) {
+    .cad-img img {
+         width: 100%; /* Szerokość 100% */
+    }
+}
+
+/* Styl dla obrazów galerii */
+.gallery-img {
+    width: 100%; /* Szerokość 100% */
+    height: 200px; /* Wysokość 200px */
+    object-fit: cover; /* Dopasowanie obrazu */
+    border-radius: 10px; /* Zaokrąglenie krawędzi */
+}
+
+/* Styl dla nagłówka galerii */
+.gallery-header {
+    margin-top: 40px; /* Margines górny 40px */
+}
+
+/* Styl dla sekcji drugiego slidera */
+.slider-section {
+    display: flex; /* Wyświetlanie elementów w rzędzie */
+    align-items: center; /* Wyrównanie elementów w pionie */
+    margin-bottom: 10px; /* Margines dolny 10px */
+}
+
+/* Styl dla treści slidera */
+.slider-section .slider-content {
+    width: 50%; /* Szerokość 50% */
+    padding: 20px; /* Wewnętrzny odstęp 20px */
+}
+
+/* Styl dla obrazu slidera */
+.slider-section .slider-image {
+    width: 50%; /* Szerokość 50% */
+    display: flex; /* Wyświetlanie elementów flex */
+    justify-content: center; /* Wyrównanie do środka */
+    align-items: center; /* Wyrównanie do środka */
+}
+
+/* Styl dla obrazka w sekcji slidera */
+.slider-section .slider-image img {
+    width: 600px; /* Szerokość obrazka */
+    height: 400px; /* Wysokość obrazka */
+    object-fit: cover; /* Dopasowanie obrazu */
+}
+
+/* Styl dla przycisków kontroli slidera */
+.slider-controls button {
+    background: none; /* Brak tła */
+    border: none; /* Brak obramowania */
+    font-size: 2rem; /* Rozmiar czcionki */
+    cursor: pointer; /* Kursor wskaźnika */
+}
+
+/* Styl dla sekcji obrazka slidera */
+.slider-image {
+    width: 100%; /* Szerokość 100% */
+    max-width: 600px; /* Maksymalna szerokość obrazka */
+    margin: auto; /* Wyśrodkowanie */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+/* Styl dla obrazka wewnątrz sekcji slidera */
+.slider-image img {
+    max-width: 100%; /* Maksymalna szerokość obrazka */
+    height: auto; /* Automatyczna wysokość */
+}
+
+/* Styl dla treści slidera */
+.slider-content {
+    text-align: center; /* Wyśrodkowanie tekstu */
+    margin-top: 20px; /* Margines górny */
+}
+
+/* Styl dla kontrolek slidera */
+.slider-controls {
+    display: flex; /* Wyświetlanie elementów flex */
+    justify-content: space-between; /* Równomierne rozmieszczenie elementów */
+    width: 100%; /* Szerokość 100% */
+    max-width: 600px; /* Maksymalna szerokość */
+    margin-top: 10px; /* Margines górny */
+}
+
+/* Media queries dla szerokości ekranu do 768px */
+@media (max-width: 768px) {
+    .slider-content h2 {
+        font-size: 1.5rem; /* Nowy rozmiar czcionki dla nagłówka */
+    }
+    
+    .slider-content p {
+        font-size: 1rem; /* Nowy rozmiar czcionki dla akapitu */
+    }
+    
+    .slider-controls button {
+        font-size: 1.25rem; /* Nowy rozmiar czcionki dla przycisków */
+    }
+}

@@ -1,0 +1,82 @@
+/* Ustawienia czcionki dla całego dokumentu */
+body {
+    font-family: 'Arial', sans-serif; /* Ustawia czcionkę na Arial lub domyślną sans-serif */
+}
+
+/* Styl nagłówków pierwszego poziomu */
+h1 {
+    font-weight: bold; /* Pogrubienie nagłówków */
+}
+
+/* Styl dla obrazów o różnych rozmiarach */
+.big-image, .small-image {
+    border-radius: 15px; /* Zakrąglenie rogów */
+    overflow: hidden; /* Ukrycie treści, która wychodzi poza granice kontenera */
+    position: relative; /* Pozycja elementu */
+    border: 1px solid black; /* Gruba czarna ramka */
+}
+
+/* Styl dla dużego obrazu */
+.big-image {
+    height: 425px; /* Wysokość obrazu */
+    background-size: cover; /* Dopasowanie obrazu do wielkości kontenera */
+    background-position: center; /* Wyśrodkowanie obrazu */
+}
+
+/* Styl dla małego obrazu */
+.small-image {
+    height: 200px; /* Wysokość obrazu */
+    background-size: cover; /* Dopasowanie obrazu do wielkości kontenera */
+    background-position: center; /* Wyśrodkowanie obrazu */
+}
+
+/* Styl etykiety na obrazach */
+.image-label {
+    position: absolute; /* Pozycja bezwzględna */
+    top: 10px; /* Odległość od góry */
+    left: 10px; /* Odległość od lewej strony */
+    background-color: rgba(0, 0, 0, 0.5); /* Kolor tła z przezroczystością */
+    color: #fff; /* Kolor tekstu na etykiecie */
+    padding: 5px; /* Wewnętrzny odstęp */
+    border-radius: 5px; /* Zakrąglenie rogów */
+    font-weight: bold; /* Pogrubienie tekstu */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+/* Styl dla elementów z klasą "position-absolute" */
+.position-absolute {
+    font-weight: bold; /* Pogrubienie tekstu */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    width: 100%; /* Szerokość elementu */
+    color: #fff; /* Kolor tekstu */
+    padding: 5px; /* Wewnętrzny odstęp */
+    border: 1px solid black; /* Gruba czarna ramka */
+    border-radius: 5px; /* Zakrąglenie rogów */
+    background-color: rgba(0, 0, 0, 0.5); /* Kolor tła z przezroczystością */
+}
+
+/* Style dla nagłówków "h2" w sekcji "h2MiejscePodrozy" */
+.h2MiejscePodrozy h2 {
+    font-size: 3em; /* Rozmiar czcionki */
+    font-family: 'Arial', sans-serif; /* Wybrany font */
+    color: #000000; /* Kolor tekstu */
+    position: relative; /* Pozycjonowanie względem rodzica */
+}
+
+/* Efekt podkreślenia po najechaniu myszą */
+.h2MiejscePodrozy h2::after {
+    content: ''; /* Dodanie pustego tekstu */
+    position: absolute; /* Pozycja bezwzględna */
+    left: 0; /* Odległość od lewej strony */
+    bottom: -5px; /* Odległość od dolnej krawędzi */
+    width: 100%; /* Szerokość */
+    height: 2px; /* Wysokość */
+    background-color: #000000; /* Kolor podkreślenia */
+    transform: scaleX(0); /* Początkowo niewidoczne */
+    transition: transform 0.3s ease-in-out; /* Animacja */
+}
+
+/* Animacja podkreślenia po najechaniu myszą */
+.h2MiejscePodrozy h2:hover::after {
+    transform: scaleX(1); /* Pokazanie podkreślenia */
+}
